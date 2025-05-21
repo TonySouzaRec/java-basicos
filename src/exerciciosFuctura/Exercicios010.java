@@ -18,7 +18,7 @@ public class Exercicios010 {
 		System.out.println("Digite o preço à vista do produto (R$): ");
 		if(scanner.hasNextDouble()) {
 			precoAVista = scanner.nextDouble();
-			if(precoAVista>=0) {
+			if(precoAVista>0) {
 				break;
 			} else {
 				System.out.println("Erro: o valor informado deve ser positivo.");
@@ -45,11 +45,11 @@ public class Exercicios010 {
 	}
 	double taxaJuros = 0.02;
 	double juros = precoAVista * taxaJuros * parcelas;
-	double precoParcelado = (precoAVista+juros)/parcelas;
+	double valorParcela = (precoAVista+juros)/parcelas;
 	
 	System.out.printf("O preço à vista do produto é de: R$ %.2f%n", precoAVista);
 	System.out.printf("A taxa de juros é de %.2f%%%n", taxaJuros*100);
-	System.out.printf("Você vai pagar %dx%.2f, total de R$ %.2f%n", parcelas, precoParcelado, precoParcelado*parcelas);
+	System.out.printf("Você vai pagar %dx%.2f, total de R$ %.2f%n", parcelas, valorParcela, valorParcela*parcelas);
 
     scanner.close();
 	}

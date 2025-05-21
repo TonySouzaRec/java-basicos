@@ -8,10 +8,10 @@ public class Exercicio003 {
 		Scanner scanner = new Scanner(System.in);
 		
 		System.out.println("Digite a distância percorrida pelo carro (em km):");
-		double distanciakm = scanner.nextInt();
+		double distanciakm = scanner.nextDouble();
 		
 		System.out.println("Digite o tempo gasto (em horas):");
-		double tempohoras = scanner.nextInt();
+		double tempohoras = scanner.nextDouble();
 		
 		double temposegundos = tempohoras * 3600;
 		double distanciametros = distanciakm * 1000;
